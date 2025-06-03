@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    color: #000000;
+}
+
+h3 {
+    color: #000000;
+}
+
+p {
+    font-size: small;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgb(236, 226, 226);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.caja_1 {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(165, 64, 121);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* espacio a los costados */
+}
+
+/* GRILLA DE 12 COLUMNAS */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+    margin-top: 90px;
+    padding: 16px;
+}
+
+/* MAIN ocupa 9 columnas */
+main {
+    grid-column: span 9;
+    display: block;
+    width: 100%;
+}
+
+/* ASIDE ocupa 3 columnas */
+aside {
+    grid-column: span 3;
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.caja_2,
+.caja_4,
+.caja_5,
+.caja_6,
+.caja_7 {
+    background-color:blanchedalmond;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-color: rgb(223, 178, 111);
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.caja_2 {
+    background-color: rgb(210, 172, 142);
+    color: rgb(255, 255, 255);
+}
+
+/* CAJA DEL ASIDE */
+.caja_8 {
+    background-color: rgb(105, 158, 110);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;       
+    width: auto;
+    object-fit: contain;
+    margin-left: 10px;  
+    margin-top: 10px;   
+}
+
